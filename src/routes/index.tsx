@@ -259,6 +259,7 @@ function Index() {
             aria-hidden="true"
           />
           <div className="hero-veil absolute inset-0" />
+          <TechBackdrop variant="hero" />
 
           <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pb-16 pt-32 md:grid-cols-[1.15fr_0.85fr]">
             <div>
