@@ -14,6 +14,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import heroVideo from "@/assets/hero-bg.mp4.asset.json";
+import { TechBackdrop } from "@/components/TechBackdrop";
 
 export const Route = createFileRoute("/")({
   head: () => ({
