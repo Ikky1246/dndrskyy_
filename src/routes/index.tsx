@@ -335,8 +335,11 @@ function Index() {
           </div>
         </section>
 
+        <div className="relative isolate">
+          <TechBackdrop />
+
         {/* Tentang */}
-        <section id="about" className="mx-auto max-w-6xl px-6 py-24">
+        <section id="about" className="relative mx-auto max-w-6xl px-6 py-24">
           <SectionHeading kicker="Get to know" title="Tentang" accent="Saya" />
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             <div className="surface-card rounded-2xl p-8">
@@ -570,6 +573,7 @@ function Index() {
             </form>
           </div>
         </section>
+        </div>
       </main>
 
       <footer className="border-t border-border py-10">
