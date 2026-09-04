@@ -318,3 +318,41 @@
     animation: none !important;
   }
 }
+
+/* Performance tuning for the backdrop */
+.tech-backdrop {
+  contain: layout paint style;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
+.tech-backdrop--hero {
+  opacity: 0.55;
+  mask-image: linear-gradient(to bottom, transparent, black 30%, black 100%);
+}
+
+.tech-grid,
+.tech-orb,
+.tech-scan,
+.tech-code,
+.tech-glyph {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Cheaper effects on low-end devices */
+.tech-backdrop[data-tier="low"] .tech-orb {
+  filter: blur(28px);
+  opacity: 0.4;
+  animation-duration: 30s;
+}
+
+.tech-backdrop[data-tier="low"] .tech-grid {
+  background-size: 72px 72px;
+  animation-duration: 40s;
+  opacity: 0.25;
+}
+
+.tech-backdrop[data-tier="low"] .tech-glyph {
+  animation-duration: 20s;
+}
