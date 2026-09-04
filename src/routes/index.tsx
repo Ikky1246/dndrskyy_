@@ -6,29 +6,30 @@ import {
   Briefcase,
   Code2,
   Download,
+  FileBadge,
+  Github,
   GraduationCap,
-  Mail,
-  MapPin,
-  Phone,
   Send,
   Sparkles,
 } from "lucide-react";
+
 import heroVideo from "@/assets/hero-bg.mp4.asset.json";
 import { TechBackdrop } from "@/components/TechBackdrop";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dndrskyy — Portofolio Web Developer" },
+      { title: "Adinda Riski Maulida — Technology × Creative" },
       {
         name: "description",
         content:
-          "Portofolio Dndrskyy: profil, riwayat pendidikan, pengalaman kerja, keahlian, proyek, dan kontak.",
+          "Portofolio Adinda Riski Maulida, mahasiswa D3 Manajemen Informatika: AI/ML, web & mobile development, UI/UX, dan digital media.",
       },
-      { property: "og:title", content: "Dndrskyy — Portofolio Web Developer" },
+      { property: "og:title", content: "Adinda Riski Maulida — Technology × Creative" },
       {
         property: "og:description",
-        content: "Profil, pendidikan, pengalaman kerja, keahlian, proyek, dan kontak.",
+        content:
+          "AI/ML, Web & Mobile Development, UI/UX, dan Digital Media. Lihat proyek, pengalaman, dan sertifikat.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -44,158 +45,162 @@ const navLinks = [
   { label: "Pengalaman", href: "#experience" },
   { label: "Keahlian", href: "#skills" },
   { label: "Proyek", href: "#projects" },
+  { label: "Sertifikat", href: "#certificates" },
   { label: "Kontak", href: "#contact" },
 ];
 
 const highlights = [
-  "Web Developer & Digital Creator",
-  "Berpengalaman membangun aplikasi web",
-  "Fokus pada UI/UX yang rapi",
-  "Terbiasa bekerja dengan data",
-  "Selalu belajar hal baru",
+  "Mahasiswa D3 Manajemen Informatika",
+  "AI/ML: prediksi, RAG, dan conversational AI",
+  "Web, mobile, dan desktop development",
+  "Integrasi hardware: RFID, barcode, thermal printer",
+  "UI/UX, desain grafis, dan produksi digital media",
 ];
 
 const passionCards = [
-  { icon: Code2, title: "Web Development", desc: "Membangun antarmuka modern" },
-  { icon: Sparkles, title: "UI Engineering", desc: "Detail, motion, dan sistem desain" },
-  { icon: Briefcase, title: "Data & Otomasi", desc: "Alur kerja yang efisien" },
-  { icon: Award, title: "Machine Learning", desc: "Eksperimen model & analitik" },
+  { icon: Sparkles, title: "AI / Machine Learning", desc: "Prediksi, RAG, dan chatbot" },
+  { icon: Code2, title: "Web & Mobile", desc: "Laravel, CI4, REST API, Flutter" },
+  { icon: Briefcase, title: "Desktop & Hardware", desc: "Java desktop, RFID, printer" },
+  { icon: Award, title: "Creative & Media", desc: "UI/UX, desain, foto, video" },
 ];
 
 const education = [
   {
-    place: "Politeknik Perkapalan Negeri Surabaya",
-    period: "2022 — 2026",
-    detail: "D4 Teknik Informatika · IPK 3.78 / 4.00",
+    place: "D3 Manajemen Informatika",
+    period: "Semester 4 — Sekarang",
+    detail: "Fokus pada pengembangan aplikasi, AI/ML terapan, dan pengujian perangkat lunak.",
     tag: "Perguruan Tinggi",
-  },
-  {
-    place: "SMKN 1 Cerme",
-    period: "2019 — 2022",
-    detail: "Rekayasa Perangkat Lunak · Lulus dengan predikat baik",
-    tag: "Sekolah Menengah",
   },
 ];
 
 const experience = [
   {
-    role: "Fullstack Developer",
-    company: "Freelance",
-    period: "2024 — Sekarang",
-    desc: "Membangun aplikasi web end-to-end untuk klien: dashboard internal, company profile, dan sistem pemesanan.",
-    tag: "Freelance",
-  },
-  {
-    role: "Programmer & Marketing",
-    company: "CV Digital Nusantara",
-    period: "2023 — 2024",
-    desc: "Mengembangkan modul internal, mengelola rilis, dan menyiapkan materi teknis untuk kebutuhan pemasaran.",
-    tag: "Kontrak",
-  },
-  {
-    role: "Team Leader Magang",
-    company: "PT Sinergi Data",
-    period: "2023",
-    desc: "Memimpin tim kecil untuk digitalisasi proses laporan dan integrasi API antar sistem.",
+    role: "Internship",
+    company: "JTI Inova",
+    period: "Periode: akan dilengkapi",
+    desc: "Detail posisi, tanggung jawab, project, dan tools selama magang akan dilengkapi berdasarkan dokumen magang.",
     tag: "Magang",
+  },
+  {
+    role: "Kepala Departemen Kominfo",
+    company: "UKM Labbaik",
+    period: "Organisasi",
+    desc: "Memimpin departemen Kominfo: mengatur strategi konten dan media sosial, mengoordinasi tim desain, fotografi, dan videografi, serta memastikan dokumentasi kegiatan berjalan konsisten.",
+    tag: "Kepemimpinan",
+  },
+  {
+    role: "Staff Muda Kominfo",
+    company: "UKM Labbaik",
+    period: "Organisasi",
+    desc: "Memproduksi konten digital, desain grafis, foto dan video kegiatan, mendukung live streaming serta produksi podcast, dan mengelola arsip dokumentasi.",
+    tag: "Digital Media",
   },
 ];
 
 const skillGroups: Record<string, { name: string; level: number }[]> = {
-  "Bahasa Pemrograman": [
-    { name: "TypeScript", level: 92 },
-    { name: "JavaScript", level: 94 },
-    { name: "Python", level: 82 },
-    { name: "PHP", level: 76 },
-    { name: "SQL", level: 85 },
-    { name: "Dart", level: 62 },
+  "AI / Machine Learning": [
+    { name: "Multiple Linear Regression", level: 82 },
+    { name: "Integrasi Model ke Mobile", level: 80 },
+    { name: "RAG / Conversational AI", level: 85 },
+    { name: "Flowise AI", level: 84 },
+    { name: "Google Gemini API", level: 80 },
   ],
-  Framework: [
-    { name: "React", level: 93 },
-    { name: "TanStack Start", level: 84 },
-    { name: "Tailwind CSS", level: 95 },
-    { name: "Node.js", level: 86 },
-    { name: "Laravel", level: 74 },
-    { name: "Flutter", level: 60 },
+  "Web Development": [
+    { name: "HTML", level: 92 },
+    { name: "CSS", level: 88 },
+    { name: "JavaScript", level: 80 },
+    { name: "Laravel", level: 82 },
+    { name: "CodeIgniter 4", level: 80 },
+    { name: "REST API", level: 84 },
   ],
-  Database: [
-    { name: "PostgreSQL", level: 88 },
-    { name: "MySQL", level: 84 },
-    { name: "Supabase", level: 90 },
-    { name: "Redis", level: 66 },
+  "Mobile & Desktop": [
+    { name: "Flutter", level: 82 },
+    { name: "API Integration", level: 84 },
+    { name: "CRUD & Database", level: 86 },
+    { name: "Java", level: 80 },
+    { name: "Java Desktop App", level: 82 },
   ],
-  Tools: [
-    { name: "Git & GitHub", level: 92 },
-    { name: "Figma", level: 80 },
-    { name: "Docker", level: 70 },
-    { name: "Vercel / CI", level: 83 },
+  "Hardware & Testing": [
+    { name: "RFID", level: 78 },
+    { name: "Barcode Scanner", level: 80 },
+    { name: "Thermal Printer", level: 78 },
+    { name: "Black Box Testing", level: 85 },
+    { name: "Dokumentasi Pengguna", level: 88 },
+  ],
+  "Creative & Digital Media": [
+    { name: "UI/UX Design", level: 85 },
+    { name: "Graphic Design", level: 88 },
+    { name: "Video Editing", level: 86 },
+    { name: "Photography & Videography", level: 84 },
+    { name: "Content & Social Media", level: 88 },
+    { name: "Live Streaming & Podcast", level: 80 },
   ],
 };
 
-const projectCategories = ["Semua", "Web", "Mobile", "Data"] as const;
+const projectCategories = ["Semua", "AI/ML", "Web", "Mobile", "Desktop"] as const;
 
 const projects = [
   {
-    title: "Orbit Dashboard",
-    category: "Web",
-    desc: "Dashboard analitik realtime dengan visualisasi data global dan mode fokus untuk tim operasional.",
-    tags: ["React", "TypeScript", "Charts"],
+    title: "Mirai AI",
+    category: "AI/ML",
+    desc: "Sistem prediksi tanggal menstruasi: aplikasi mobile untuk pengguna, web untuk admin, dan model machine learning yang diintegrasikan ke aplikasi. Role: Full-stack Mobile & Web Backend · Semester 4 · Case study tersedia.",
+    tags: ["Flutter", "Laravel", "Machine Learning", "REST API"],
   },
   {
-    title: "Nebula Commerce",
-    category: "Web",
-    desc: "Storefront modular dengan checkout cepat, pencarian instan, dan panel admin ringan.",
-    tags: ["Next-gen UI", "API", "Payments"],
+    title: "Chatbot Puskesmas",
+    category: "AI/ML",
+    desc: "Chatbot layanan informasi berbasis RAG dengan knowledge base dan dashboard analitik untuk Puskesmas Panji Situbondo. Role: Chatbot Developer · Topik Tugas Akhir · Case study tersedia.",
+    tags: ["Flowise AI", "Gemini API", "RAG", "Dashboard"],
   },
   {
-    title: "Signal Studio",
-    category: "Web",
-    desc: "Perangkat kolaborasi kreator: moodboard, komentar bertimestamp, ekspor otomatis.",
-    tags: ["Design System", "Motion"],
+    title: "ATK Fatimah POS",
+    category: "Desktop",
+    desc: "Sistem pencatatan penjualan Java Desktop yang terintegrasi dengan RFID, barcode scanner, dan thermal printer. Role: Frontend & Backend · Semester 2.",
+    tags: ["Java", "RFID", "Barcode", "Thermal Printer"],
   },
   {
-    title: "Rute Cepat",
+    title: "ATK Fatimah Store",
+    category: "Web",
+    desc: "Website company profile sekaligus katalog produk: detail dan harga produk, keranjang, checkout via WhatsApp, dan informasi jam pengambilan. Role: Web Developer · Semester 2.",
+    tags: ["Web", "Katalog", "Checkout WhatsApp"],
+  },
+  {
+    title: "Absensi Mahasiswa MIF 2024",
+    category: "Desktop",
+    desc: "Aplikasi desktop pendukung proses absensi mahasiswa Program Studi Manajemen Informatika. Role: Frontend & Backend · Semester 1.",
+    tags: ["Java Desktop", "CRUD", "Database"],
+  },
+  {
+    title: "Mobile App Mirai",
     category: "Mobile",
-    desc: "Aplikasi perencana rute harian dengan mode offline dan pengingat berbasis lokasi.",
-    tags: ["Flutter", "Maps", "Offline"],
+    desc: "Antarmuka mobile Mirai AI untuk pengguna: pencatatan siklus, hasil prediksi dari model ML, dan sinkronisasi data lewat API.",
+    tags: ["Flutter", "API Integration", "UI/UX"],
+  },
+];
+
+const certificates = [
+  { group: "Internship", items: ["JTI Inova — Sertifikat Magang"] },
+  {
+    group: "Organisasi",
+    items: [
+      "UKM Labbaik — Sertifikat Keanggotaan",
+      "Staff Muda Kominfo — Sertifikat",
+      "Kepala Departemen Kominfo — Sertifikat",
+      "Kepanitiaan — Sertifikat",
+    ],
   },
   {
-    title: "Absensi Wajah",
-    category: "Mobile",
-    desc: "Presensi karyawan berbasis pengenalan wajah dengan sinkronisasi ke server pusat.",
-    tags: ["Flutter", "ML Kit"],
-  },
-  {
-    title: "Prediksi Panen",
-    category: "Data",
-    desc: "Model prediksi hasil panen dari data cuaca dan histori lahan, disajikan lewat dashboard.",
-    tags: ["Python", "Pandas", "Sklearn"],
-  },
-  {
-    title: "Sentimen Publik",
-    category: "Data",
-    desc: "Analisis sentimen komentar media sosial dengan pipeline pembersihan data otomatis.",
-    tags: ["NLP", "Airflow"],
-  },
-  {
-    title: "Sistem Pemesanan",
-    category: "Web",
-    desc: "Sistem reservasi ruang dengan kalender, notifikasi email, dan laporan penggunaan.",
-    tags: ["Node", "PostgreSQL"],
-  },
-  {
-    title: "Katalog Digital",
-    category: "Web",
-    desc: "Katalog produk dengan pencarian fuzzy, filter dinamis, dan halaman detail yang cepat.",
-    tags: ["React", "Search"],
+    group: "Dokumentasi Proyek",
+    items: ["Mirai AI — Case Study", "Chatbot Puskesmas — Case Study"],
   },
 ];
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "halo@dndrskyy.dev" },
-  { icon: Phone, label: "Telepon", value: "+62 812 3456 7890" },
-  { icon: MapPin, label: "Lokasi", value: "Surabaya, Indonesia" },
+  { icon: Github, label: "GitHub", value: "github.com/Ikky1246" },
+  { icon: Sparkles, label: "Fokus", value: "Technology × Creative" },
+  { icon: Briefcase, label: "Status", value: "Terbuka untuk kolaborasi & magang" },
 ];
+
 
 function SectionHeading({ kicker, title, accent }: { kicker: string; title: string; accent: string }) {
   return (
