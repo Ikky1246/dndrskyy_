@@ -6,13 +6,13 @@ import {
   Briefcase,
   Code2,
   Download,
+  FileBadge,
+  Github,
   GraduationCap,
-  Mail,
-  MapPin,
-  Phone,
   Send,
   Sparkles,
 } from "lucide-react";
+
 import heroVideo from "@/assets/hero-bg.mp4.asset.json";
 import { TechBackdrop } from "@/components/TechBackdrop";
 
