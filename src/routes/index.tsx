@@ -246,7 +246,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50">
         <nav className="mx-auto mt-4 flex max-w-6xl items-center justify-between gap-4 rounded-full border border-border bg-background/70 px-5 py-3 backdrop-blur-xl">
           <a href="#home" className="font-display text-sm font-semibold tracking-tight">
-            Adinda Riski Maulida<span className="text-aurora">.</span>
+            Dndrskyy<span className="text-aurora">_</span>
           </a>
           <ul className="hidden items-center gap-1 lg:flex">
             {navLinks.map((l) => (
@@ -295,7 +295,7 @@ function Index() {
               >
                 Adinda
                 <br />
-                <span className="text-aurora">Risk i Maulida</span>
+                <span className="text-aurora">Riski Maulida</span>
               </h1>
               <p
                 className="animate-float-up mt-4 font-display text-sm uppercase tracking-[0.3em] text-primary-glow"
@@ -652,7 +652,7 @@ function Index() {
       <footer className="border-t border-border py-10">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <p className="font-display text-sm font-semibold">
-            Adinda Riski Maulida<span className="text-aurora">.</span>
+            Dndrskyy<span className="text-aurora">_</span>
           </p>
           <p className="mt-2 text-xs text-muted-foreground">
             © 2026 Adinda Riski Maulida · Technology × Creative.
