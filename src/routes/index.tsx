@@ -6,8 +6,6 @@ import {
   Briefcase,
   Code2,
   Download,
-  FileBadge,
-  Github,
   GraduationCap,
   Send,
   Sparkles,
@@ -29,7 +27,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "AI/ML, Web & Mobile Development, UI/UX, dan Digital Media. Lihat proyek, pengalaman, dan sertifikat.",
+          "Technology × Creative — AI/ML, Web & Mobile Development, UI/UX, and Digital Media. Lihat proyek, pengalaman, dan sertifikat.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -50,18 +48,18 @@ const navLinks = [
 ];
 
 const highlights = [
-  "Mahasiswa D3 Manajemen Informatika",
-  "AI/ML: prediksi, RAG, dan conversational AI",
-  "Web, mobile, dan desktop development",
-  "Integrasi hardware: RFID, barcode, thermal printer",
-  "UI/UX, desain grafis, dan produksi digital media",
+  "Informatics Student & Technology × Creative Enthusiast",
+  "Technology × Creative — AI/ML, Web & Mobile Development, UI/UX, and Digital Media",
 ];
 
 const passionCards = [
-  { icon: Sparkles, title: "AI / Machine Learning", desc: "Prediksi, RAG, dan chatbot" },
-  { icon: Code2, title: "Web & Mobile", desc: "Laravel, CI4, REST API, Flutter" },
-  { icon: Briefcase, title: "Desktop & Hardware", desc: "Java desktop, RFID, printer" },
-  { icon: Award, title: "Creative & Media", desc: "UI/UX, desain, foto, video" },
+  { icon: Sparkles, title: "AI / Machine Learning", desc: "Integrasi model prediksi ke aplikasi mobile, Multiple Linear Regression, RAG / Conversational AI, Flowise AI, Google Gemini API" },
+  { icon: Code2, title: "Web Development", desc: "HTML, CSS, JavaScript, Laravel, CodeIgniter 4, REST API" },
+  { icon: Briefcase, title: "Mobile Development", desc: "Flutter, API Integration, CRUD, Database Integration" },
+  { icon: Award, title: "Desktop Development", desc: "Java, Java Desktop Application" },
+  { icon: Briefcase, title: "Hardware Integration", desc: "RFID, Thermal Printer, Barcode Scanner" },
+  { icon: Award, title: "Software Testing", desc: "Black Box Testing, Functional Testing, Pengujian aplikasi, Dokumentasi/panduan pengguna" },
+  { icon: Sparkles, title: "Creative & Digital Media", desc: "UI/UX Design, Graphic Design, Video Editing, Photography, Videography, Content Creation, Social Media / Digital Communication, Live Streaming, Podcast, Dokumentasi kegiatan" },
 ];
 
 const education = [
@@ -99,8 +97,8 @@ const experience = [
 
 const skillGroups: Record<string, { name: string; level: number }[]> = {
   "AI / Machine Learning": [
-    { name: "Multiple Linear Regression", level: 82 },
     { name: "Integrasi Model ke Mobile", level: 80 },
+    { name: "Multiple Linear Regression", level: 82 },
     { name: "RAG / Conversational AI", level: 85 },
     { name: "Flowise AI", level: 84 },
     { name: "Google Gemini API", level: 80 },
@@ -109,31 +107,44 @@ const skillGroups: Record<string, { name: string; level: number }[]> = {
     { name: "HTML", level: 92 },
     { name: "CSS", level: 88 },
     { name: "JavaScript", level: 80 },
+    { name: "Web Backend", level: 80 },
     { name: "Laravel", level: 82 },
     { name: "CodeIgniter 4", level: 80 },
     { name: "REST API", level: 84 },
   ],
-  "Mobile & Desktop": [
+  
+  "Mobile Development": [
     { name: "Flutter", level: 82 },
     { name: "API Integration", level: 84 },
-    { name: "CRUD & Database", level: 86 },
-    { name: "Java", level: 80 },
-    { name: "Java Desktop App", level: 82 },
+    { name: "CRUD", level: 86 },
+    { name: "Database Integration", level: 86 },
   ],
-  "Hardware & Testing": [
+  "Desktop Development": [
+    { name: "Java", level: 80 },
+    { name: "Java Desktop Application", level: 82 },
+  ],
+  "Hardware Integration": [
     { name: "RFID", level: 78 },
-    { name: "Barcode Scanner", level: 80 },
     { name: "Thermal Printer", level: 78 },
+    { name: "Barcode Scanner", level: 80 },
+  ],
+  "Software Testing": [
     { name: "Black Box Testing", level: 85 },
-    { name: "Dokumentasi Pengguna", level: 88 },
+    { name: "Functional Testing", level: 83 },
+    { name: "Pengujian aplikasi", level: 85 },
+    { name: "Dokumentasi/panduan pengguna", level: 88 },
   ],
   "Creative & Digital Media": [
     { name: "UI/UX Design", level: 85 },
     { name: "Graphic Design", level: 88 },
     { name: "Video Editing", level: 86 },
-    { name: "Photography & Videography", level: 84 },
-    { name: "Content & Social Media", level: 88 },
-    { name: "Live Streaming & Podcast", level: 80 },
+    { name: "Photography", level: 84 },
+    { name: "Videography", level: 84 },
+    { name: "Content Creation", level: 86 },
+    { name: "Social Media / Digital Communication", level: 88 },
+    { name: "Live Streaming", level: 80 },
+    { name: "Podcast", level: 80 },
+    { name: "Dokumentasi kegiatan", level: 88 },
   ],
 };
 
@@ -179,15 +190,19 @@ const projects = [
 ];
 
 const certificates = [
-  { group: "Internship", items: ["JTI Inova — Sertifikat Magang"] },
+  { group: "Internship", items: ["JTI Inova — [Certificate]"] },
   {
     group: "Organisasi",
     items: [
-      "UKM Labbaik — Sertifikat Keanggotaan",
-      "Staff Muda Kominfo — Sertifikat",
-      "Kepala Departemen Kominfo — Sertifikat",
-      "Kepanitiaan — Sertifikat",
+      "UKM Labbaik — [Certificate]",
+      "Staff Muda Kominfo — [Certificate]",
+      "Kepala Departemen Kominfo — [Certificate]",
+      "Kepanitiaan — [Certificate]",
     ],
+  },
+  {
+    group: "Academic / Project",
+    items: ["[Certificate / Award / Achievement]"],
   },
   {
     group: "Dokumentasi Proyek",
@@ -196,7 +211,7 @@ const certificates = [
 ];
 
 const contactInfo = [
-  { icon: Github, label: "GitHub", value: "github.com/Ikky1246" },
+  { icon: Award, label: "GitHub", value: "github.com/Ikky1246" },
   { icon: Sparkles, label: "Fokus", value: "Technology × Creative" },
   { icon: Briefcase, label: "Status", value: "Terbuka untuk kolaborasi & magang" },
 ];
@@ -216,11 +231,16 @@ function SectionHeading({ kicker, title, accent }: { kicker: string; title: stri
 }
 
 function Index() {
-  const [skillTab, setSkillTab] = useState<string>("Bahasa Pemrograman");
+  const [skillTab, setSkillTab] = useState<string>("Semua");
   const [projectTab, setProjectTab] = useState<(typeof projectCategories)[number]>("Semua");
 
   const visibleProjects =
     projectTab === "Semua" ? projects : projects.filter((p) => p.category === projectTab);
+
+  const visibleSkills =
+    skillTab === "Semua"
+      ? Object.values(skillGroups).flat()
+      : skillGroups[skillTab] || [];
 
   return (
     <div>
@@ -228,7 +248,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50">
         <nav className="mx-auto mt-4 flex max-w-6xl items-center justify-between gap-4 rounded-full border border-border bg-background/70 px-5 py-3 backdrop-blur-xl">
           <a href="#home" className="font-display text-sm font-semibold tracking-tight">
-            Dndrskyy<span className="text-aurora">.</span>
+            Dndrskyy<span className="text-aurora">_</span>
           </a>
           <ul className="hidden items-center gap-1 lg:flex">
             {navLinks.map((l) => (
@@ -275,15 +295,15 @@ function Index() {
                 className="animate-float-up mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl"
                 style={{ animationDelay: "80ms" }}
               >
-                Muhammad
+                Adinda
                 <br />
-                <span className="text-aurora">Dndrskyy</span>
+                <span className="text-aurora">Riski Maulida</span>
               </h1>
               <p
                 className="animate-float-up mt-4 font-display text-sm uppercase tracking-[0.3em] text-primary-glow"
                 style={{ animationDelay: "140ms" }}
               >
-                Web Developer · Digital Creator
+                Informatics Student & Technology × Creative Enthusiast
               </p>
               <p
                 className="animate-float-up mt-6 max-w-xl leading-relaxed text-muted-foreground"
@@ -344,11 +364,12 @@ function Index() {
 
         <div className="relative isolate">
           <TechBackdrop />
+        </div>
 
         {/* Tentang */}
         <section id="about" className="relative mx-auto max-w-6xl px-6 py-24">
           <SectionHeading kicker="Get to know" title="Tentang" accent="Saya" />
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 grid gap-6 md:grid-cols-[1fr_2fr]">
             <div className="surface-card rounded-2xl p-8">
               <ul className="space-y-4">
                 {highlights.map((h) => (
@@ -367,9 +388,9 @@ function Index() {
               </p>
             </div>
 
-            <div>
+            <div className="surface-card rounded-2xl p-8">
               <p className="font-display text-sm font-semibold">Minat & Fokus</p>
-              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {passionCards.map((c) => (
                   <div
                     key={c.title}
@@ -436,12 +457,34 @@ function Index() {
           </ol>
         </section>
 
+        {/* Sertifikat */}
+        <section id="certificates" className="mx-auto max-w-4xl px-6 py-24">
+          <SectionHeading kicker="Achievements" title="Sertifikat" accent="Pencapaian" />
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {certificates.map((certGroup) => (
+              <div key={certGroup.group} className="space-y-4">
+                <h3 className="font-display text-base font-semibold">{certGroup.group}</h3>
+                <ul className="space-y-2">
+                  {certGroup.items.map((item) => (
+                    <li key={item} className="surface-card rounded-xl p-4 flex items-start gap-3">
+                      <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/20 text-[0.6rem] text-primary-glow">
+                        📜
+                      </span>
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Keahlian */}
-        <section id="skills" className="border-y border-border bg-secondary/20 py-24">
+        <section id="skills" className="py-24">
           <div className="mx-auto max-w-6xl px-6">
             <SectionHeading kicker="Toolbox" title="Keahlian" accent="" />
             <div className="mt-10 flex flex-wrap justify-center gap-2">
-              {Object.keys(skillGroups).map((g) => (
+              {["Semua", ...Object.keys(skillGroups)].map((g) => (
                 <button
                   key={g}
                   onClick={() => setSkillTab(g)}
@@ -455,9 +498,8 @@ function Index() {
                 </button>
               ))}
             </div>
-
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {skillGroups[skillTab]?.map((s) => (
+              {visibleSkills.map((s) => (
                 <div key={s.name} className="surface-card rounded-2xl p-5">
                   <div className="flex items-center justify-between">
                     <p className="font-display text-sm font-medium">{s.name}</p>
@@ -548,25 +590,39 @@ function Index() {
 
             <form
               className="surface-card space-y-4 rounded-2xl p-6"
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={(e) => {
+                e.preventDefault();
+                const nama = (document.getElementById('nama') as HTMLInputElement)?.value || '';
+                const email = (document.getElementById('email') as HTMLInputElement)?.value || '';
+                const subjek = (document.getElementById('subjek') as HTMLInputElement)?.value || '';
+                const pesan = (document.getElementById('pesan') as HTMLTextAreaElement)?.value || '';
+
+                const whatsappMessage = `Nama: ${nama}%0AEmail: ${email}%0ASubjek: ${subjek}%0APesan: ${pesan}`;
+                const whatsappUrl = `https://wa.me/085707034609?text=${whatsappMessage}`;
+                window.open(whatsappUrl, '_blank');
+              }}
             >
               <p className="font-display text-sm font-semibold">Kirim Pesan</p>
               <input
+                id="nama"
                 type="text"
                 placeholder="Nama"
                 className="h-11 w-full rounded-xl border border-input bg-background/60 px-4 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary"
               />
               <input
+                id="email"
                 type="email"
                 placeholder="Email"
                 className="h-11 w-full rounded-xl border border-input bg-background/60 px-4 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary"
               />
               <input
+                id="subjek"
                 type="text"
                 placeholder="Subjek"
                 className="h-11 w-full rounded-xl border border-input bg-background/60 px-4 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary"
               />
               <textarea
+                id="pesan"
                 rows={5}
                 placeholder="Pesan"
                 className="w-full resize-none rounded-xl border border-input bg-background/60 px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary"
@@ -580,16 +636,15 @@ function Index() {
             </form>
           </div>
         </section>
-        </div>
       </main>
 
       <footer className="border-t border-border py-10">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <p className="font-display text-sm font-semibold">
-            Dndrskyy<span className="text-aurora">.</span>
+            Dndrskyy<span className="text-aurora">_</span>
           </p>
           <p className="mt-2 text-xs text-muted-foreground">
-            © 2026 Dndrskyy. Dibuat dengan teliti di Surabaya.
+            © 2026 Dndrskyy. Dibuat dengan teliti di Situbondo.
           </p>
         </div>
       </footer>
