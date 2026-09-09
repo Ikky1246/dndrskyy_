@@ -228,7 +228,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50">
         <nav className="mx-auto mt-4 flex max-w-6xl items-center justify-between gap-4 rounded-full border border-border bg-background/70 px-5 py-3 backdrop-blur-xl">
           <a href="#home" className="font-display text-sm font-semibold tracking-tight">
-            Dndrskyy<span className="text-aurora">.</span>
+            Adinda<span className="text-aurora">.</span>
           </a>
           <ul className="hidden items-center gap-1 lg:flex">
             {navLinks.map((l) => (
@@ -275,22 +275,22 @@ function Index() {
                 className="animate-float-up mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl"
                 style={{ animationDelay: "80ms" }}
               >
-                Muhammad
+                Adinda Riski
                 <br />
-                <span className="text-aurora">Dndrskyy</span>
+                <span className="text-aurora">Maulida</span>
               </h1>
               <p
                 className="animate-float-up mt-4 font-display text-sm uppercase tracking-[0.3em] text-primary-glow"
                 style={{ animationDelay: "140ms" }}
               >
-                Web Developer · Digital Creator
+                Technology × Creative
               </p>
               <p
                 className="animate-float-up mt-6 max-w-xl leading-relaxed text-muted-foreground"
                 style={{ animationDelay: "200ms" }}
               >
-                Saya merancang dan membangun produk digital yang rapi, cepat, dan berkarakter — dari
-                riset dan desain antarmuka hingga implementasi serta rilis.
+                Mahasiswa D3 Manajemen Informatika yang bergerak di dua dunia: AI/ML, pengembangan
+                web &amp; mobile — dan desain, fotografi, serta konten digital.
               </p>
               <div
                 className="animate-float-up mt-9 flex flex-wrap items-center gap-3"
@@ -315,9 +315,9 @@ function Index() {
                 style={{ animationDelay: "320ms" }}
               >
                 {[
-                  { k: "3+", v: "Tahun Pengalaman" },
-                  { k: "25+", v: "Proyek Selesai" },
-                  { k: "12+", v: "Klien Puas" },
+                  { k: "5+", v: "Proyek Terselesaikan" },
+                  { k: "4", v: "Semester Berkarya" },
+                  { k: "2", v: "Case Study AI" },
                 ].map((s) => (
                   <div key={s.v} className="surface-card rounded-xl px-4 py-3">
                     <dt className="font-display text-2xl font-bold text-aurora">{s.k}</dt>
@@ -335,7 +335,7 @@ function Index() {
                   style={{ backgroundImage: "var(--gradient-aurora)" }}
                 />
                 <div className="surface-card relative flex size-52 items-center justify-center rounded-full">
-                  <span className="font-display text-5xl font-bold text-aurora">DS</span>
+                  <span className="font-display text-5xl font-bold text-aurora">AR</span>
                 </div>
               </div>
             </div>
@@ -361,9 +361,9 @@ function Index() {
                 ))}
               </ul>
               <p className="mt-6 border-t border-border pt-6 text-sm leading-relaxed text-muted-foreground">
-                Saya bekerja di persimpangan desain dan engineering: menyusun sistem desain yang
-                konsisten, lalu mengubahnya menjadi kode yang bersih, mudah dirawat, dan performa
-                tinggi di semua perangkat.
+                Kekuatan saya ada di persimpangan technology dan creative: membangun sistem — dari
+                model prediksi dan chatbot hingga aplikasi web, mobile, dan desktop — lalu
+                mengomunikasikannya lewat desain dan media yang rapi.
               </p>
             </div>
 
@@ -522,11 +522,40 @@ function Index() {
           </div>
         </section>
 
+        {/* Sertifikat & Dokumentasi */}
+        <section id="certificates" className="border-y border-border bg-secondary/20 py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <SectionHeading kicker="Proof of work" title="Sertifikat &" accent="Dokumentasi" />
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {certificates.map((c) => (
+                <div key={c.group} className="surface-card rounded-2xl p-6">
+                  <div className="flex items-center gap-3">
+                    <span className="flex size-9 items-center justify-center rounded-full bg-primary/15">
+                      <FileBadge className="size-4 text-primary-glow" />
+                    </span>
+                    <h3 className="font-display text-sm font-semibold">{c.group}</h3>
+                  </div>
+                  <ul className="mt-5 space-y-3">
+                    {c.items.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-sm">
+                        <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/20 text-[0.6rem] text-primary-glow">
+                          ✓
+                        </span>
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Kontak */}
         <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
           <SectionHeading kicker="Get in touch" title="Hubungi" accent="Saya" />
           <p className="mx-auto mt-4 max-w-lg text-center text-sm text-muted-foreground">
-            Terbuka untuk kolaborasi freelance, proyek produk, dan peran fulltime.
+            Terbuka untuk kolaborasi project, magang, dan peluang di bidang teknologi maupun kreatif.
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -540,7 +569,18 @@ function Index() {
                     <p className="text-[0.65rem] uppercase tracking-widest text-muted-foreground">
                       {c.label}
                     </p>
-                    <p className="font-display text-sm">{c.value}</p>
+                    {c.label === "GitHub" ? (
+                      <a
+                        href="https://github.com/Ikky1246"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-display text-sm text-primary-glow hover:underline"
+                      >
+                        {c.value}
+                      </a>
+                    ) : (
+                      <p className="font-display text-sm">{c.value}</p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -586,10 +626,10 @@ function Index() {
       <footer className="border-t border-border py-10">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <p className="font-display text-sm font-semibold">
-            Dndrskyy<span className="text-aurora">.</span>
+            Adinda Riski Maulida<span className="text-aurora">.</span>
           </p>
           <p className="mt-2 text-xs text-muted-foreground">
-            © 2026 Dndrskyy. Dibuat dengan teliti di Surabaya.
+            © 2026 Adinda Riski Maulida · Technology × Creative.
           </p>
         </div>
       </footer>
