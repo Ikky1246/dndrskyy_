@@ -228,7 +228,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50">
         <nav className="mx-auto mt-4 flex max-w-6xl items-center justify-between gap-4 rounded-full border border-border bg-background/70 px-5 py-3 backdrop-blur-xl">
           <a href="#home" className="font-display text-sm font-semibold tracking-tight">
-            Dndrskyy<span className="text-aurora">.</span>
+            Adinda<span className="text-aurora">.</span>
           </a>
           <ul className="hidden items-center gap-1 lg:flex">
             {navLinks.map((l) => (
@@ -335,7 +335,7 @@ function Index() {
                   style={{ backgroundImage: "var(--gradient-aurora)" }}
                 />
                 <div className="surface-card relative flex size-52 items-center justify-center rounded-full">
-                  <span className="font-display text-5xl font-bold text-aurora">DS</span>
+                  <span className="font-display text-5xl font-bold text-aurora">AR</span>
                 </div>
               </div>
             </div>
@@ -361,9 +361,9 @@ function Index() {
                 ))}
               </ul>
               <p className="mt-6 border-t border-border pt-6 text-sm leading-relaxed text-muted-foreground">
-                Saya bekerja di persimpangan desain dan engineering: menyusun sistem desain yang
-                konsisten, lalu mengubahnya menjadi kode yang bersih, mudah dirawat, dan performa
-                tinggi di semua perangkat.
+                Kekuatan saya ada di persimpangan technology dan creative: membangun sistem — dari
+                model prediksi dan chatbot hingga aplikasi web, mobile, dan desktop — lalu
+                mengomunikasikannya lewat desain dan media yang rapi.
               </p>
             </div>
 
