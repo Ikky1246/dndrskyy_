@@ -569,7 +569,18 @@ function Index() {
                     <p className="text-[0.65rem] uppercase tracking-widest text-muted-foreground">
                       {c.label}
                     </p>
-                    <p className="font-display text-sm">{c.value}</p>
+                    {c.label === "GitHub" ? (
+                      <a
+                        href="https://github.com/Ikky1246"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-display text-sm text-primary-glow hover:underline"
+                      >
+                        {c.value}
+                      </a>
+                    ) : (
+                      <p className="font-display text-sm">{c.value}</p>
+                    )}
                   </div>
                 </div>
               ))}
