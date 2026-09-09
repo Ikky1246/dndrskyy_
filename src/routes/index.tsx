@@ -112,7 +112,6 @@ const skillGroups: Record<string, { name: string; level: number }[]> = {
     { name: "CodeIgniter 4", level: 80 },
     { name: "REST API", level: 84 },
   ],
-  
   "Mobile Development": [
     { name: "Flutter", level: 82 },
     { name: "API Integration", level: 84 },
@@ -216,7 +215,6 @@ const contactInfo = [
   { icon: Briefcase, label: "Status", value: "Terbuka untuk kolaborasi & magang" },
 ];
 
-
 function SectionHeading({ kicker, title, accent }: { kicker: string; title: string; accent: string }) {
   return (
     <div className="text-center">
@@ -248,7 +246,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50">
         <nav className="mx-auto mt-4 flex max-w-6xl items-center justify-between gap-4 rounded-full border border-border bg-background/70 px-5 py-3 backdrop-blur-xl">
           <a href="#home" className="font-display text-sm font-semibold tracking-tight">
-            Dndrskyy<span className="text-aurora">_</span>
+            Adinda Riski Maulida<span className="text-aurora">.</span>
           </a>
           <ul className="hidden items-center gap-1 lg:flex">
             {navLinks.map((l) => (
@@ -297,7 +295,7 @@ function Index() {
               >
                 Adinda
                 <br />
-                <span className="text-aurora">Riski Maulida</span>
+                <span className="text-aurora">Risk i Maulida</span>
               </h1>
               <p
                 className="animate-float-up mt-4 font-display text-sm uppercase tracking-[0.3em] text-primary-glow"
@@ -458,22 +456,24 @@ function Index() {
         </section>
 
         {/* Sertifikat */}
-        <section id="certificates" className="mx-auto max-w-4xl px-6 py-24">
+        <section id="certificates" className="mx-auto max-w-6xl px-6 py-24">
           <SectionHeading kicker="Achievements" title="Sertifikat" accent="Pencapaian" />
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 space-y-8">
             {certificates.map((certGroup) => (
-              <div key={certGroup.group} className="space-y-4">
-                <h3 className="font-display text-base font-semibold">{certGroup.group}</h3>
-                <ul className="space-y-2">
+              <div key={certGroup.group}>
+                <h3 className="font-display text-xl font-bold mb-6">{certGroup.group}</h3>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {certGroup.items.map((item) => (
-                    <li key={item} className="surface-card rounded-xl p-4 flex items-start gap-3">
-                      <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/20 text-[0.6rem] text-primary-glow">
-                        📜
-                      </span>
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
+                    <div key={item} className="surface-card rounded-2xl p-6 flex flex-col items-start gap-3">
+                      <div className="flex items-center gap-3">
+                        <span className="flex size-8 items-center justify-center rounded-full bg-primary/20 text-[0.75rem] text-primary-glow">
+                          📜
+                        </span>
+                        <span className="text-muted-foreground">{item}</span>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>
@@ -582,7 +582,18 @@ function Index() {
                     <p className="text-[0.65rem] uppercase tracking-widest text-muted-foreground">
                       {c.label}
                     </p>
-                    <p className="font-display text-sm">{c.value}</p>
+                    {c.label === "GitHub" ? (
+                      <a
+                        href="https://github.com/Ikky1246"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-display text-sm text-primary-glow hover:underline"
+                      >
+                        {c.value}
+                      </a>
+                    ) : (
+                      <p className="font-display text-sm">{c.value}</p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -641,10 +652,10 @@ function Index() {
       <footer className="border-t border-border py-10">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <p className="font-display text-sm font-semibold">
-            Dndrskyy<span className="text-aurora">_</span>
+            Adinda Riski Maulida<span className="text-aurora">.</span>
           </p>
           <p className="mt-2 text-xs text-muted-foreground">
-            © 2026 Dndrskyy. Dibuat dengan teliti di Situbondo.
+            © 2026 Adinda Riski Maulida · Technology × Creative.
           </p>
         </div>
       </footer>
