@@ -522,11 +522,40 @@ function Index() {
           </div>
         </section>
 
+        {/* Sertifikat & Dokumentasi */}
+        <section id="certificates" className="border-y border-border bg-secondary/20 py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <SectionHeading kicker="Proof of work" title="Sertifikat &" accent="Dokumentasi" />
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {certificates.map((c) => (
+                <div key={c.group} className="surface-card rounded-2xl p-6">
+                  <div className="flex items-center gap-3">
+                    <span className="flex size-9 items-center justify-center rounded-full bg-primary/15">
+                      <FileBadge className="size-4 text-primary-glow" />
+                    </span>
+                    <h3 className="font-display text-sm font-semibold">{c.group}</h3>
+                  </div>
+                  <ul className="mt-5 space-y-3">
+                    {c.items.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-sm">
+                        <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/20 text-[0.6rem] text-primary-glow">
+                          ✓
+                        </span>
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Kontak */}
         <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
           <SectionHeading kicker="Get in touch" title="Hubungi" accent="Saya" />
           <p className="mx-auto mt-4 max-w-lg text-center text-sm text-muted-foreground">
-            Terbuka untuk kolaborasi freelance, proyek produk, dan peran fulltime.
+            Terbuka untuk kolaborasi project, magang, dan peluang di bidang teknologi maupun kreatif.
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -586,10 +615,10 @@ function Index() {
       <footer className="border-t border-border py-10">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <p className="font-display text-sm font-semibold">
-            Dndrskyy<span className="text-aurora">.</span>
+            Adinda Riski Maulida<span className="text-aurora">.</span>
           </p>
           <p className="mt-2 text-xs text-muted-foreground">
-            © 2026 Dndrskyy. Dibuat dengan teliti di Surabaya.
+            © 2026 Adinda Riski Maulida · Technology × Creative.
           </p>
         </div>
       </footer>
