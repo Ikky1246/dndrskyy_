@@ -275,22 +275,22 @@ function Index() {
                 className="animate-float-up mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl"
                 style={{ animationDelay: "80ms" }}
               >
-                Muhammad
+                Adinda Riski
                 <br />
-                <span className="text-aurora">Dndrskyy</span>
+                <span className="text-aurora">Maulida</span>
               </h1>
               <p
                 className="animate-float-up mt-4 font-display text-sm uppercase tracking-[0.3em] text-primary-glow"
                 style={{ animationDelay: "140ms" }}
               >
-                Web Developer · Digital Creator
+                Technology × Creative
               </p>
               <p
                 className="animate-float-up mt-6 max-w-xl leading-relaxed text-muted-foreground"
                 style={{ animationDelay: "200ms" }}
               >
-                Saya merancang dan membangun produk digital yang rapi, cepat, dan berkarakter — dari
-                riset dan desain antarmuka hingga implementasi serta rilis.
+                Mahasiswa D3 Manajemen Informatika yang bergerak di dua dunia: AI/ML, pengembangan
+                web &amp; mobile — dan desain, fotografi, serta konten digital.
               </p>
               <div
                 className="animate-float-up mt-9 flex flex-wrap items-center gap-3"
@@ -315,9 +315,9 @@ function Index() {
                 style={{ animationDelay: "320ms" }}
               >
                 {[
-                  { k: "3+", v: "Tahun Pengalaman" },
-                  { k: "25+", v: "Proyek Selesai" },
-                  { k: "12+", v: "Klien Puas" },
+                  { k: "5+", v: "Proyek Terselesaikan" },
+                  { k: "4", v: "Semester Berkarya" },
+                  { k: "2", v: "Case Study AI" },
                 ].map((s) => (
                   <div key={s.v} className="surface-card rounded-xl px-4 py-3">
                     <dt className="font-display text-2xl font-bold text-aurora">{s.k}</dt>
